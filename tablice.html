@@ -18,15 +18,22 @@
     }
 
         //zadanie 3
-    const tab3 = [20];
-            for(let i=0; i<20; i++) {
+    const tab3 = [1, 2, 3, 4,5,6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        for(let i=0; i<=20; i++) {
+            for(let i=0; i<=20; i++) {
               if(tab3[i]%3==0 && tab3[i]%5==0) {
                 console.log(tab3[i]);
                }   
             }
-    
+    }
         //zadanie 4
     const tab4 = [];
+    tab4.unshift(prompt("Podaj pierwszą liczbę: "));
+    tab4.unshift(prompt("Podaj drugą liczbę: "));
+    tab4.unshift(prompt("Podaj trzecią liczbę: "));
+    tab4.unshift(prompt("Podaj czwartą liczbę: "));
+    tab4.unshift(prompt("Podaj piątą liczbę: "));
+    console.log(tab4);
     </script>
 </body>
 </html>
