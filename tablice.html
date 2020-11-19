@@ -13,9 +13,7 @@
 
         //zadanie 2
     const tab2 = tab1.reverse();
-    for(let i=0;i<tab1;i++){
-        console.log(tab2[i]);
-    }
+        console.log(tab2);
 
         //zadanie 3
     const tab3 = [1, 2, 3, 4,5,6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -28,16 +26,25 @@
     }
         //zadanie 4
     const tab4 = [];
-    tab4.unshift(prompt("Podaj pierwszą liczbę: "));
-    tab4.unshift(prompt("Podaj drugą liczbę: "));
-    tab4.unshift(prompt("Podaj trzecią liczbę: "));
-    tab4.unshift(prompt("Podaj czwartą liczbę: "));
-    tab4.unshift(prompt("Podaj piątą liczbę: "));
+    tab4.unshift(parseInt(prompt("Podaj pierwszą liczbę: ")));
+    tab4.unshift(parseInt(prompt("Podaj drugą liczbę: ")));
+    tab4.unshift(parseInt(prompt("Podaj trzecią liczbę: ")));
+    tab4.unshift(parseInt(prompt("Podaj czwartą liczbę: ")));
+    tab4.unshift(parseInt(prompt("Podaj piątą liczbę: ")));
     console.log(tab4);
 
     //zadanie 5
-    const tab5 = [];
-    console.log(tab3.join()) + console.log(tab4.join());
+    const tab5 = tab3.concat(tab4);
+    console.log(tab5)
+
+    //zadanie 6
+    function compareNr(a, b) {
+    return a - b
+}
+const tab6 = tab5;
+const sort = tab6.sort(compareNr);
+console.log( sort );
+
     </script>
 </body>
 </html>
